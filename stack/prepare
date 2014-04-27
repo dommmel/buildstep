@@ -4,6 +4,11 @@
 #
 
 #
+# ADD LINODE PACKAGE MIRROR
+#
+sed -i.backup 's/http:\/\/\(archive\|us.archive\|security\).ubuntu.com/http:\/\/mirrors.linode.com/g' /etc/apt/sources.list
+
+#
 # SYSTEM PACKAGES
 #
 apt-get update
